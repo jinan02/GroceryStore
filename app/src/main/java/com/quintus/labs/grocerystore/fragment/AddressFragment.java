@@ -172,10 +172,10 @@ public class AddressFragment extends Fragment {
             for (int i = 0; i < m_jArry.length(); i++) {
                 JSONObject jo_inside = m_jArry.getJSONObject(i);
 
-                String state = jo_inside.getString("State");
+                String region = jo_inside.getString("region");
                 String id = jo_inside.getString("id");
 
-                stringArrayState.add(state);
+                stringArrayState.add(region);
 
             }
         } catch (JSONException e) {
@@ -208,11 +208,11 @@ public class AddressFragment extends Fragment {
 
                     for (int i = 0; i < m_jArry.length(); i++) {
                         JSONObject jo_inside = m_jArry.getJSONObject(i);
-                        String state = jo_inside.getString("State");
+                        String state = jo_inside.getString("region");
                         String cityid = jo_inside.getString("id");
 
                         if (spinnerStateValue.equalsIgnoreCase(state)) {
-                            _city = jo_inside.getString("city");
+                            _city = jo_inside.getString("ville");
                             stringArrayCity.add(_city);
                         }
 

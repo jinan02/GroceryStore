@@ -13,19 +13,11 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        app:cardCornerRadius="50dp">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/margin_15dp"
-            android:src="@drawable/logo" />
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logobuycheap" />
 
     <com.quintus.labs.grocerystore.customfonts.MyTextViewOleoScriptBold
         android:layout_width="fill_parent"
